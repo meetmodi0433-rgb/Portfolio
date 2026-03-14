@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Modi </title>
+    <!-- Tailwind (only for reset) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts: Inter (modern) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- AOS (Animate on Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PARTICLES BACKGROUND (Canvas) -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- FLOATING GEOMETRIC SHAPES -->
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">PORTFOLIO</a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#certificates" class="nav-link">Certificates</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="mobile-menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
+        </div>
+        <div class="mobile-menu hidden" id="mobileMenu">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#certificates" class="mobile-link">Certificates</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- HOME SECTION -->
+        <section id="home" class="section home-section">
+            <div class="container">
+                <div class="home-grid">
+                    <div class="home-content" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="badge">
+                            <span class="badge-icon"><i class="fas fa-crown"></i></span>
+                            <span class="badge-text">DEVOTEE INDIA</span>
+                        </div>
+                        <h1 class="home-title">Meet Modi</h1>
+                        <p class="home-subtitle typing-effect"></p>
+                        <p class="home-tagline">EVERY CLICK COUNT</p>
+                        <div class="home-buttons">
+                            <a href="#" class="btn primary"><i class="fas fa-file-pdf"></i> Download Resume</a>
+                            <a href="#contact" class="btn outline"><i class="fas fa-handshake"></i> Get In Touch</a>
+                            <a href="https://devoteeindia.netlify.app/" target="_blank" class="btn secondary"><i class="fas fa-globe"></i> Visit DEVOTEE INDIA</a>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/meet-modi-2b4a80338/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/meet_modi06/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="mailto:meetmodi0433@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                            <a href="https://github.com/meetmodi0433-rgb" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="home-image" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="image-frame tilt-effect">
+                            <img src="assets/meetprofile.jpg" alt="Meet Modi">
+                            <div class="frame-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION (Updated with new content) -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-image" data-aos="fade-right">
+                        <div class="image-frame tilt-effect">
+                            <img src="assets/meetabout.jpg" alt="Meet Modi">
+                        </div>
+                    </div>
+                    <div class="about-content" data-aos="fade-left">
+                        <div class="about-card glass-card">
+                            <p class="about-text">
+                                I am <span class="highlight">Meet Modi</span>, The Founder Of <span class="highlight">DEVOTEE INDIA</span>. A B.Tech Cyber Security student driven by a strong curiosity for how digital threats evolve and how to counter them using intelligence-led strategies.
+                            </p>
+                            <p class="about-text">
+                                My focus lies in <span class="highlight">Open Source Intelligence (OSINT)</span>, ethical hacking, and real-world threat detection. Rather than just using tools, I dive deep into how cybercrimes work — from phishing scams to data leaks — and build practical solutions to tackle them.
+                            </p>
+                            <p class="about-text">
+                                Cyber Crime Investigator | OSINT | SOCMINT | HUMINT | IMINT | GEOINT & more.
+                            </p>
+                            <p class="about-quote">
+                                "Every click counts."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills-grid">
+                    <!-- Technical Skills Card -->
+                    <div class="skill-card glass-card" data-aos="flip-left" data-aos-duration="800">
+                        <div class="card-header">
+                            <i class="fas fa-microchip card-icon"></i>
+                            <h3>Technical Skills</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="skill-list">
+                                <li><span class="skill-cat">OSINT & Recon:</span> Shodan, WhatsMyName, Recon-ng, Google Dorking, Spiderfoot</li>
+                                <li><span class="skill-cat">Development:</span> HTML, CSS, MySQL, Oracle, Arduino IDE</li>
+                                <li><span class="skill-cat">Security Tools:</span> Kali Linux, Metasploit, Hydra, Medusa, Nmap</li>
+                                <li><span class="skill-cat">Others:</span> Networking, GitHub, VS Code, Canva</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Soft Skills Card -->
+                    <div class="skill-card glass-card" data-aos="flip-left" data-aos-delay="100" data-aos-duration="800">
+                        <div class="card-header">
+                            <i class="fas fa-users card-icon"></i>
+                            <h3>Soft Skills & Languages</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="skill-list">
+                                <li><span class="skill-cat">Soft Skills:</span> Effective Communication, Adaptability, Problem-Solving, Teamwork, Emotional Intelligence</li>
+                                <li><span class="skill-cat">Languages:</span> English, Hindi, Gujarati</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Card -->
+                <div class="education-card glass-card" data-aos="fade-up" data-aos-duration="800">
+                    <div class="card-header">
+                        <i class="fas fa-graduation-cap card-icon"></i>
+                        <h3>Education</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="year">2024 - 2028</span>
+                                    <h4>B.Tech Cyber Security</h4>
+                                    <p>Indus University, Ahmedabad</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="year">2022 - 2024</span>
+                                    <h4>Higher Secondary</h4>
+                                    <p>Mangaldeep Vidhyalya</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="year">2020 - 2022</span>
+                                    <h4>Secondary</h4>
+                                    <p>Shree Swaminarayan International School</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interests -->
+                <div class="interests-card glass-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+                    <div class="card-header">
+                        <i class="fas fa-heart card-icon"></i>
+                        <h3>Interests</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="interests-tags">
+                            <span class="tag"><i class="fas fa-rotate-left"></i> Reverse Engineering</span>
+                            <span class="tag"><i class="fas fa-bug"></i> Threat Hunting</span>
+                            <span class="tag"><i class="fas fa-satellite-dish"></i> Bug hunting</span>
+                            <span class="tag"><i class="fas fa-flag"></i> CTF</span>
+                            <span class="tag"><i class="fas fa-book"></i> Cyber Crime Studies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATES SECTION -->
+        <section id="certificates" class="section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="certs-grid">
+                    <div class="cert-card glass-card" data-aos="zoom-in" data-aos-duration="800">
+                        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                        <h3>Certified Phishing Prevention Specialist </h3>
+                        <p class="issuer">Hack & Fix Academy!</p>
+                        <span class="cert-id">ID: 4928-4035-3872-2511</span>
+                        <a href="#" class="verify-link">Verify <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                 </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info" data-aos="fade-right">
+                        <div class="info-card glass-card">
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:meetmodi0433@gmail.com">meetmodi0433@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fab fa-github"></i>
+                                <div>
+                                    <h4>GitHub</h4>
+                                    <a href="https://github.com/meetmodi0433-rgb" target="_blank">github.com/meetmodi</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fab fa-linkedin"></i>
+                                <div>
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/meet-modi-2b4a80338/" target="_blank">linkedin.com/in/meetmodi</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Ahmedabad, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form" data-aos="fade-left">
+                        <form action="https://formspree.io/f/maqpdwep" method="POST" class="form-card glass-card">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="_replyto" required placeholder="your@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required placeholder="Message subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="Your message..."></textarea>
+                            </div>
+                            <button type="submit" class="btn primary full-width"><i class="fas fa-paper-plane"></i> Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Meet Modi | DEVOTEE INDIA — EVERY CLICK COUNT</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
