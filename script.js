@@ -154,12 +154,3 @@ document.addEventListener('DOMContentLoaded', function() {
     document.head.appendChild(style);
 });
 
-document.getElementById('download-resume').addEventListener('click', function(e) {
-    e.preventDefault();
-    const link = document.createElement('a');
-    link.href = 'Meet_Modi_Resume.pdf'; // path to your PDF
-    link.download = 'Meet_Modi_Resume.pdf'; // desired filename
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-});
